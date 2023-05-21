@@ -25,8 +25,6 @@ export const ContactsCards = () => {
   useEffect(() => {
     getUserInfo();
   }, [getUserInfo]);
-
-  console.log(contactsId);
   
 
   return (
