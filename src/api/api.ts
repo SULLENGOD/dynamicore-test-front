@@ -1,8 +1,9 @@
 import { DeleteInfo } from "../components/Card";
 import { FormState } from "../hooks/useForm";
+const api = 'https://luis-m-sullen-api.herokuapp.com/api/auth/'
 
 export const login = async( loginInfo: FormState ) => {
-    const url = 'http://localhost:3000/api/auth/signin';
+    const url = `${api}signin`;
     const res = await fetch(url, {
         method: 'POST',
         headers: {
@@ -16,7 +17,7 @@ export const login = async( loginInfo: FormState ) => {
 
 export const getprofile = async(token: string) => {
     
-    const url = 'http://localhost:3000/api/auth/profile';
+    const url = `${api}profile`;
     const req = {
         method: 'GET',
         headers: {
@@ -31,7 +32,7 @@ export const getprofile = async(token: string) => {
 };
 
 export const deleteContact = async (deleteInfo: DeleteInfo, token: string) => {
-    const url = 'http://localhost:3000/api/auth/delete-contact';
+    const url = `${api}delete-contact`;
     const req = {
         method: 'DELETE',
         headers: {

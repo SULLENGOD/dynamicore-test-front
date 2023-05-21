@@ -32,7 +32,7 @@ export const LoginForm = () => {
   return (
     <div className="d-block m-auto w-75 mt-5 form-div text-center">
       <h1 className="form-title mb-5">Signin</h1>
-      <p className=" alert alert-danger">{error}</p>
+      {error !== "" && <p className="alert alert-danger">{error}</p>}
       <form onSubmit={onSubmit}>
         <div className="form-floating mb-5">
           <input

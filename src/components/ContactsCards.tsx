@@ -26,6 +26,9 @@ export const ContactsCards = () => {
     getUserInfo();
   }, [getUserInfo]);
 
+  console.log(contactsId);
+  
+
   return (
     <div className="text-center mt-5">
       <h1  style={{color: "white"}}>
