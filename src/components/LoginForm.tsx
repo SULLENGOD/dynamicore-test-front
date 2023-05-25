@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useForm } from "../hooks/useForm";
 import { login } from "../api/api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 type FormElement = FormEvent<HTMLFormElement>;
 
@@ -75,7 +75,7 @@ export const LoginForm = () => {
         </div>
       </form>
       <div className="register-link m-3">
-        Dont have an account? <a>Click Here!</a>
+        Dont have an account? <Link to={"/register"}>Click Here!</Link>
       </div>
     </div>
   );

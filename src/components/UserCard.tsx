@@ -17,18 +17,21 @@ export const UserCard = () => {
   }, [getUserInfo]);
 
   return (
-    <div className="text-center">
-        <h1 style={{color: "white"}}>Profile</h1>
-        <hr />
-        <div className="card m-auto mt-3 text-center p-3" style={{ width: "18rem" }}>
-      <img
-        src="https://gvzoo.com/cms-data/gallery/blog/animals/capybara/banner-capybara-sq.jpg"
-        className="card-img-top rounded-circle "
-      />
-      <div className="card-body">
-        {user && <h1 className="card-title">{user.username}</h1>}
+    <div className="text-center ">
+      <h1 style={{ color: "white" }}>Profile</h1>
+      <hr />
+      <div
+        className="card m-auto mt-3 text-center p-3 border border-light"
+        style={{ width: "18rem" }}
+      >
+        <img
+          src="https://gvzoo.com/cms-data/gallery/blog/animals/capybara/banner-capybara-sq.jpg"
+          className="card-img-top rounded-circle "
+        />
+        <div className="card-body">
+          {user && <h1 className="card-title">{user.username}</h1>}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

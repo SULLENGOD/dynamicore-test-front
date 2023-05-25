@@ -44,3 +44,8 @@
 .top-label-form {
   color: white;
 }
+
+.btn-add {
+  background-color: rgb(23, 23, 23);
+  color: white;
+}

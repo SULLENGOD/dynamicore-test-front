@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { getprofile } from "../api/api";
 import { User } from "../pages/User/User";
 import { Card } from "./Card";
+import { AddContactForm } from "./AddContactForm";
 
 
 export const ContactsCards = () => {
@@ -33,6 +34,9 @@ export const ContactsCards = () => {
         Contacts
       </h1>
       <hr />
+      <div>
+        <AddContactForm />
+      </div>
       <div className="d-flex flex-wrap">
       {
         contactsId?.map((contact) => {

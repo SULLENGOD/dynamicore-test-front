@@ -45,6 +45,24 @@ export const getprofile = async(token: string) => {
     return data
 };
 
+export const addContact = async(contactInfo: FormState, token: string) => {
+    const url = `https://luis-m-sullen-api.herokuapp.com/api/auth/add-contact`;
+    const req = {
+        method:'PUT',
+        headers: {
+            "Content-Type": "application/json",
+            "auth-token": token
+        },
+        body: JSON.stringify(contactInfo)
+    };
+
+    const res = await fetch(url, req);
+    const data = await res.json();
+
+    return data
+    
+};
+
 export const deleteContact = async (deleteInfo: DeleteInfo, token: string) => {
     const url = `${api}delete-contact`;
     const req = {

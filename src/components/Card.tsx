@@ -30,15 +30,17 @@ export const Card = ({ contact, userId }: CardProps) => {
     }
     
   return (
-    <div className="card m-auto mb-3 text-center p-3" style={{ width: "18rem"}}>
+    <div className="card m-auto mb-3 text-center p-3 border border-light" style={{ width: "18rem"}}>
       <img
         src="https://gvzoo.com/cms-data/gallery/blog/animals/capybara/banner-capybara-sq.jpg"
         className="card-img-top rounded-circle"
       />
       <div className="card-body">
         <h1 className="card-title">{contact.username}.</h1>
-        <button className="btn btn-danger" onClick={onDeleteContact}>
-            Remove
+      </div>
+      <div>
+      <button className="btn btn-danger rounded-circle" onClick={onDeleteContact}>
+            X
         </button>
       </div>
     </div>
