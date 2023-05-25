@@ -27,3 +27,20 @@
 .form-title {
   color: white;
 }
+
+.register-link {
+  color: white;
+}
+.btn-login {
+  color: white;
+  background-color: black;
+}
+
+.btn-register {
+  color: white;
+  background-color: black;
+}
+
+.top-label-form {
+  color: white;
+}

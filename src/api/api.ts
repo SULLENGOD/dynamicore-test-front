@@ -15,6 +15,20 @@ export const login = async( loginInfo: FormState ) => {
     return res
 }
 
+export const signUp = async(signUpInfo: FormState) => {
+    const url = `${api}signup`;
+    const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(signUpInfo)
+    });
+
+    return res
+    
+}
+
 export const getprofile = async(token: string) => {
     
     const url = `${api}profile`;
