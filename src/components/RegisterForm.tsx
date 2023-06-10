@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useForm } from "../hooks/useForm";
 import { signUp } from "../api/api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 type FormElement = FormEvent<HTMLFormElement>
 
@@ -104,6 +104,9 @@ export const RegisterForm = () => {
           <button className="btn btn-register btn-lg" type="submit">Send</button>
         </div>
       </form>
+      <div className="register-link m-3">
+        <p>You have an account? <Link to={'/'}>Click Here!</Link></p>
+      </div>
     </div>
   );
 };

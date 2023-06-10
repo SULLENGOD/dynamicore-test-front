@@ -3,12 +3,13 @@ import { Home } from "./pages/Home/Home";
 import { UserPage } from "./pages/User/User";
 import { RegisterPage } from "./pages/Register/RegisterPage"
 import './App.css'
+import { Navbar } from "./components/Navbar";
 
 function App(): JSX.Element {
 
   return (
     <>
-      <h1 className="title">Front-End Test</h1>
+      <Navbar />
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/user" element={ <UserPage /> } />

@@ -1,6 +1,6 @@
 import { DeleteInfo } from "../components/Card";
 import { FormState } from "../hooks/useForm";
-const api = 'https://luis-m-sullen-api.herokuapp.com/api/auth/'
+const api = 'http://localhost:3000/api/auth/'
 
 export const login = async( loginInfo: FormState ) => {
     const url = `${api}signin`;

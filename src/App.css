@@ -31,6 +31,7 @@
 .register-link {
   color: white;
 }
+
 .btn-login {
   color: white;
   background-color: black;
@@ -48,4 +49,24 @@
 .btn-add {
   background-color: rgb(23, 23, 23);
   color: white;
+}
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+}
+
+.register-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home-div1, .home-div2 {
+  flex: 1 1 25rem;
+}
+
+.navbar {
+  background-color: black !important;
 }
